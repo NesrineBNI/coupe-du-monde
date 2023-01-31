@@ -713,8 +713,10 @@
                                 $equipes["equipe4"]["null"]+=1;
                                 
                             }
+                            // ----- Sort ------
                             $columns = array_column($equipes, 'point');
                             array_multisort($columns, SORT_DESC, $equipes);
+                            // ------ html -------
                 foreach($equipes as $equipe){
                     
                     echo "<tr>
