@@ -548,6 +548,7 @@
                   </tr>
                 </thead>
                <tbody>
+                <!-- --------Code php------- -->
                <?php
                     if(isset($_POST['submit'])){
                         $equipes = ["equipe1"=>["nom"=>"Maroc","point"=>0,"MJ"=>0,"MG"=>0,"null"=>0,"MP"=>0,"BM"=>0,"BE"=>0,"dif"=>0],
