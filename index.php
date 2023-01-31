@@ -24,10 +24,10 @@
                     </div>
                     <ul class="nav_menu">
                         <li class="nav_list">
-                            <a href="#!" class="nav_link active">Home</a>
+                            <a href="#" class="nav_link active">Home</a>
                         </li>
                         <li class="nav_list btn-nav">
-                            <a href="#!" class="btn-outline">
+                            <a href="#qatar" class="btn-outline">
                                 <span>Start your journey</span>
                                 <ion-icon name="compass-outline"></ion-icon>
                             </a>
@@ -46,7 +46,7 @@
                         <p class="paragraph">
                             Come for World Cup matches & explore all over Qatar.
                         </p>
-                        <a href="#!" class="btn-primary">
+                        <a href="#qatar" class="btn-primary">
                             <span>Get the ticket</span>
                             <ion-icon name="log-out-outline"></ion-icon>
                         </a>
@@ -61,7 +61,7 @@
     <section id="points">
          <!-- QATAR WORD -->
     <div class="d-flex justify-content-center" style="margin-top: 30px; text-align: center;">
-        <img src="images/qatar-word.png" alt="" style="width: 400px">
+        <img src="images/qatar-word.png" alt="" id="qatar" style="width: 400px">
     </div>
     <!--// QATAR WORD //-->
     </section>
