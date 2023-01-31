@@ -26,16 +26,6 @@
                         <li class="nav_list">
                             <a href="#!" class="nav_link active">Home</a>
                         </li>
-                        <!-- <li class="nav_list">
-                            <a href="#!" class="nav_link">Stadium</a>
-                        </li>
-                        <li class="nav_list">
-                            <a href="https://world-cup-matches.codsfli.com/" class="nav_link" target="_matches">Match Schedule</a
-                >
-              </li> -->
-              <!-- <li class="nav_list">
-                <a href="#!" class="nav_link">Explore</a>
-                        </li> -->
                         <li class="nav_list btn-nav">
                             <a href="#!" class="btn-outline">
                                 <span>Start your journey</span>
@@ -60,24 +50,6 @@
                             <span>Get the ticket</span>
                             <ion-icon name="log-out-outline"></ion-icon>
                         </a>
-                        <!-- <div class="worldcup-count-down">
-                            <div class="count">
-                                <h3 class="days">00</h3>
-                                <span class="count-time">days</span>
-                            </div>
-                            <div class="count">
-                                <h3 class="hours">00</h3>
-                                <span class="count-time">hours</span>
-                            </div>
-                            <div class="count">
-                                <h3 class="minutes">00</h3>
-                                <span class="count-time">minutes</span>
-                            </div>
-                            <div class="count">
-                                <h3 class="seconds">00</h3>
-                                <span class="count-time">seconds</span>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="hero-image">
                         <img src="images/logo.png" height="400" alt="hero-img" class="hero-img">
@@ -92,12 +64,6 @@
         <img src="images/qatar-word.png" alt="" style="width: 400px">
     </div>
     <!--// QATAR WORD //-->
-        <!-- <div class="container">
-            <h1 class="standings-heading">FIFA World Cup Qatar 2022</h1>
-            <h2 class="standings-subheading">Group Stage Points Table</h2>
-            <h3 class="loader">points table is loading...</h3>
-            <div class="points-container"></div>
-        </div> -->
     </section>
     <section class="container1">
     <section class="col1">
@@ -140,11 +106,6 @@
                             </div>
                             <!--// FIRST TEAM COL //-->
                             <!-- MATCH INFO COL -->
-                            <!-- <div class="col-sm-6" style="text-align: center; margin-top: 30px;">
-                                <h3>Group (A)</h3>
-                                <h4>X</h4>
-                                <h3>18:30</h3>
-                            </div> -->
                             <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                 <input type="number" id="" name="equipe1-matche1"
                                     min="0" max="100">
@@ -572,7 +533,7 @@
                 </div>
                 <!--// MATCH COL //-->
             </div>
-            <input type="submit" class="btn btn-success" value="Sumuler" name="submit" style="margin-top: 20px"> 
+            <input type="submit" class="btn btn-danger" value="Sumuler" name="submit" style="margin-top: 20px"> 
         </form>
         </section>
         <section class="col2">
