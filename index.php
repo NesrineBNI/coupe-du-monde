@@ -108,13 +108,12 @@
                             <!-- MATCH INFO COL -->
                             <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                 <input type="number" id="" name="equipe1-matche1"
-                                    min="0" max="100">
-                                <!-- <h3>Group (A)</h3> -->
+                                    min="0" max="100" value="<?php if (isset($_POST['equipe1-matche1'])) echo $_POST['equipe1-matche1']; ?>">
+                                
                                 <h2>X</h2>
-                                <!-- <h4>X</h4>
-                                <h3>20:30</h3> -->
+                                
                                 <input type="number" id="" name="equipe2-matche1"
-                                    min="0" max="100">
+                                    min="0" max="100" value="<?php if (isset($_POST['equipe2-matche1'])) echo $_POST['equipe2-matche1']; ?>">
                             </div>
                             <!--// MATCH INFO COL //-->
                             <!-- SECOND TEAM COL -->
@@ -186,13 +185,12 @@
                                 <!-- MATCH INFO COL -->
                                 <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                     <input type="number" id="" name="equipe3-matche1"
-                                        min="0" max="100"> 
-                                    <!-- <h3>Group (A)</h3> -->
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe3-matche1'])) echo $_POST['equipe3-matche1']; ?>"> 
+                                    
                                     <h2>X</h2>
-                                    <!-- <h4>X</h4>
-                                    <h3>20:30</h3> -->
+                                    
                                     <input type="number" id="" name="equipe4-matche1"
-                                        min="0" max="100">
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe4-matche1'])) echo $_POST['equipe4-matche1']; ?>">
                                 </div>
                                 <!--// MATCH INFO COL //-->
                                 <!-- SECOND TEAM COL -->
@@ -263,13 +261,12 @@
                                 <!-- MATCH INFO COL -->
                                 <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                     <input type="number" id="" name="equipe4-matche2"
-                                        min="0" max="100"> 
-                                    <!-- <h3>Group (A)</h3> -->
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe4-matche2'])) echo $_POST['equipe4-matche2']; ?>"> 
+                                    
                                     <h2>X</h2>
-                                    <!-- <h4>X</h4>
-                                    <h3>20:30</h3> -->
+                                    
                                     <input type="number" id="" name="equipe1-matche2"
-                                        min="0" max="100">
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe1-matche2'])) echo $_POST['equipe1-matche2']; ?>">
                                 </div>
                                 <!--// MATCH INFO COL //-->
                                 <!-- SECOND TEAM COL -->
@@ -340,13 +337,12 @@
                                 <!-- MATCH INFO COL -->
                                 <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                     <input type="number" id="" name="equipe3-matche2"
-                                        min="0" max="100"> 
-                                    <!-- <h3>Group (A)</h3> -->
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe3-matche2'])) echo $_POST['equipe3-matche2']; ?>"> 
+                                    
                                     <h2>X</h2>
-                                    <!-- <h4>X</h4>
-                                    <h3>20:30</h3> -->
+                                   
                                     <input type="number" id="" name="equipe2-matche2"
-                                        min="0" max="100">
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe2-matche2'])) echo $_POST['equipe2-matche2']; ?>">
                                 </div>
                                 <!--// MATCH INFO COL //-->
                                 <!-- SECOND TEAM COL -->
@@ -417,13 +413,12 @@
                                 <!-- MATCH INFO COL -->
                                 <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                     <input type="number" id="" name="equipe1-matche3"
-                                        min="0" max="100"> 
-                                    <!-- <h3>Group (A)</h3> -->
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe1-matche3'])) echo $_POST['equipe1-matche3']; ?>"> 
+                                    
                                     <h2>X</h2>
-                                    <!-- <h4>X</h4>
-                                    <h3>20:30</h3> -->
+                                   
                                     <input type="number" id="" name="equipe3-matche3"
-                                        min="0" max="100">
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe3-matche3'])) echo $_POST['equipe3-matche3']; ?>">
                                 </div>
                                 <!--// MATCH INFO COL //-->
                                 <!-- SECOND TEAM COL -->
@@ -491,17 +486,16 @@
                                         <!--// IMAGE AND TEAM NAME DIV// -->
                                     </div>
                                 </div>
-                                <!--// FIRST TEAM COL //-->
+                                <!--// FIRST TEAM COL  //-->
                                 <!-- MATCH INFO COL -->
                                 <div class="col-sm-6" style="text-align: center; margin-top: 12px;">
                                     <input type="number" id="" name="equipe2-matche3"
-                                        min="0" max="100"> 
-                                    <!-- <h3>Group (A)</h3> -->
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe2-matche3'])) echo $_POST['equipe2-matche3']; ?>"> 
+                                   
                                     <h2>X</h2>
-                                    <!-- <h4>X</h4>
-                                    <h3>20:30</h3> -->
+                
                                     <input type="number" id="" name="equipe4-matche3"
-                                        min="0" max="100">
+                                        min="0" max="100" value="<?php if (isset($_POST['equipe4-matche3'])) echo $_POST['equipe4-matche3']; ?>">
                                 </div>
                                 <!--// MATCH INFO COL //-->
                                 <!-- SECOND TEAM COL -->
@@ -638,7 +632,6 @@
                                 $equipes["equipe4"]["MJ"]+=1;
                                 $equipes["equipe3"]["null"]+=1;
                                 $equipes["equipe4"]["null"]+=1;
-                                
                             }
                          //  MATCHE4
                             if($_POST['equipe2-matche2'] ==''and $_POST['equipe3-matche2']==''){
@@ -723,7 +716,7 @@
                             $columns = array_column($equipes, 'point');
                             array_multisort($columns, SORT_DESC, $equipes);
                 foreach($equipes as $equipe){
-                    // sort($equipes);
+                    
                     echo "<tr>
                     <td>".$equipe["nom"]."</td>
                     <td>".$equipe["point"]."</td>
