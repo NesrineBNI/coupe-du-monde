@@ -717,6 +717,27 @@
                             // ----- Sort ------
                             $columns = array_column($equipes, 'point');
                             array_multisort($columns, SORT_DESC, $equipes);
+                            usort($equipes, function ($x, $y) {
+                                if ($x["point"] === $y["point"]) {
+                                    if ($x["dif"] === $y["dif"]) {
+                                        if ($x["BM"] === $y["BM"]) {
+                                            return 0;
+                                        } else if ($x["BM"] < $y["BM"]) {
+                                            return 1;
+                                        } else if ($x["BM"] > $y["BM"]) {
+                                            return -1;
+                                        }
+                                    } else if ($x["dif"] < $y["dif"]) {
+                                        return 1;
+                                    } else if ($x["dif"] > $y["dif"]) {
+                                        return -1;
+                                    }
+                                } else if ($x["point"] < $y["point"]) {
+                                    return 1;
+                                } else if ($x["point"] > $y["point"]) {
+                                    return -1;
+                                }
+                            });
                             // ------ html -------
                 foreach($equipes as $equipe){
                     
@@ -736,8 +757,7 @@
             }
                ?>
                </tbody>
-              </table>
-            
+              </table>  
         </section>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
