@@ -717,24 +717,25 @@
                             // ----- Sort ------
                             $columns = array_column($equipes, 'point');
                             array_multisort($columns, SORT_DESC, $equipes);
-                            usort($equipes, function ($x, $y) {
-                                if ($x["point"] === $y["point"]) {
-                                    if ($x["dif"] === $y["dif"]) {
-                                        if ($x["BM"] === $y["BM"]) {
+
+                            usort($equipes, function ($n, $m) {
+                                if ($n["point"] === $m["point"]) {
+                                    if ($n["dif"] === $m["dif"]) {
+                                        if ($n["BM"] === $m["BM"]) {
                                             return 0;
-                                        } else if ($x["BM"] < $y["BM"]) {
+                                        } else if ($n["BM"] < $m["BM"]) {
                                             return 1;
-                                        } else if ($x["BM"] > $y["BM"]) {
+                                        } else if ($n["BM"] > $m["BM"]) {
                                             return -1;
                                         }
-                                    } else if ($x["dif"] < $y["dif"]) {
+                                    } else if ($n["dif"] < $m["dif"]) {
                                         return 1;
-                                    } else if ($x["dif"] > $y["dif"]) {
+                                    } else if ($n["dif"] > $m["dif"]) {
                                         return -1;
                                     }
-                                } else if ($x["point"] < $y["point"]) {
+                                } else if ($n["point"] < $m["point"]) {
                                     return 1;
-                                } else if ($x["point"] > $y["point"]) {
+                                } else if ($n["point"] > $m["point"]) {
                                     return -1;
                                 }
                             });
